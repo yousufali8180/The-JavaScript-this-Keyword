@@ -1,0 +1,30 @@
+<!-- Explicit Function Binding -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+<p>In this example <strong>this</strong> refers to person2, even if it is a method of person1:</p>
+
+<p id="demo"></p>
+
+<script>
+const person1 = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const person2 = {
+  firstName:"John",
+  lastName: "Doe",
+}
+
+let x = person1.fullName.call(person2); 
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+</html>
+
+

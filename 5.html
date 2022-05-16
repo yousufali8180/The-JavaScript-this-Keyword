@@ -1,0 +1,20 @@
+<!-- this in a Function (Default) -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+
+<p>In this example, <b>this</b> refers to the the window object:</p>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = myFunction();
+
+function myFunction() {
+  return this;
+}
+</script>
+
+</body>
+</html>
